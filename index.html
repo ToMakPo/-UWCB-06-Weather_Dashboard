@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://tomakpo.github.io/MyAPIs/layout.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <aside>
+            <h3>Search for a City</h3>
+            <input type="search" id="city-search-input">
+            <input type="submit" id="city-search-button">
+            <div id="city-list"></div>
+        </aside>
+        <div class="content">
+            <div id="weather-info">
+                <div id="units">
+                    Metric
+                    <label class="switch">
+                        <input id="unit-switch" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    Imperial
+                </div>
+                <h2 id="city-name-display"></h2>
+                <h3 id="date-display"></h3>
+                <img id="current-weather-icon">
+                <div id="current-weather"></div>
+                <div>Temperature: <span id="current-temperature"></span></div>
+                <div>Humidity: <span id="current-humidity"></span></div>
+                <div>Wind Speed: <span id="current-wind-speed"></span></div>
+                <div>UV Index: <span id="current-uvi"></span></div>
+            </div>
+            <div id="five-day-forcast">
+                <h3>5-Day Forcast:</h3>
+                <div id="forcast-list">
+                    <span id="forcast-day-1" class="forcast-card">
+                        <div class="forcast-day-of-week"></div>
+                        <div class="forcast-date"></div>
+                        <img class="forcast-icon">
+                        <div class="forcast-temp"></div>
+                        <div class="forcast-humidity"></div>
+                    </span>
+                    <span id="forcast-day-2" class="forcast-card">
+                        <div class="forcast-day-of-week"></div>
+                        <div class="forcast-date"></div>
+                        <img class="forcast-icon">
+                        <div class="forcast-temp"></div>
+                        <div class="forcast-humidity"></div>
+                    </span>
+                    <span id="forcast-day-3" class="forcast-card">
+                        <div class="forcast-day-of-week"></div>
+                        <div class="forcast-date"></div>
+                        <img class="forcast-icon">
+                        <div class="forcast-temp"></div>
+                        <div class="forcast-humidity"></div>
+                    </span>
+                    <span id="forcast-day-4" class="forcast-card">
+                        <div class="forcast-day-of-week"></div>
+                        <div class="forcast-date"></div>
+                        <img class="forcast-icon">
+                        <div class="forcast-temp"></div>
+                        <div class="forcast-humidity"></div>
+                    </span>
+                    <span id="forcast-day-5" class="forcast-card">
+                        <div class="forcast-day-of-week"></div>
+                        <div class="forcast-date"></div>
+                        <img class="forcast-icon">
+                        <div class="forcast-temp"></div>
+                        <div class="forcast-humidity"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="https://tomakpo.github.io/MyAPIs/global.js"></script>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
