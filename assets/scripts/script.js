@@ -27,7 +27,8 @@ function init() {
     for (let city of Object.values(cities)) {
         addCityToList(city)
     }
-    getCityByID(prefs.city.id)
+    if (prefs.city)
+        getCityByID(prefs.city.id)
 
     citySearchButton.on('click', event => {
         event.preventDefault()
