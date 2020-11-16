@@ -18,8 +18,10 @@
     <main>
         <aside>
             <h3>Search for a City</h3>
-            <input type="search" id="city-search-input">
-            <input type="submit" id="city-search-button">
+            <div id="search-box">
+                <input type="search" id="city-search-input">
+                <input type="submit" id="city-search-button">
+            </div>
             <div id="city-list"></div>
         </aside>
         <div class="content">
@@ -41,6 +43,7 @@
                 <div>Wind Speed: <span id="current-wind-speed"></span></div>
                 <div>UV Index: <span id="current-uvi"></span></div>
             </div>
+            
             <div id="five-day-forcast">
                 <h3>5-Day Forcast:</h3>
                 <div id="forcast-list">
@@ -51,6 +54,7 @@
                         <div class="forcast-temp"></div>
                         <div class="forcast-humidity"></div>
                     </span>
+
                     <span id="forcast-day-2" class="forcast-card">
                         <div class="forcast-day-of-week"></div>
                         <div class="forcast-date"></div>
@@ -58,6 +62,7 @@
                         <div class="forcast-temp"></div>
                         <div class="forcast-humidity"></div>
                     </span>
+
                     <span id="forcast-day-3" class="forcast-card">
                         <div class="forcast-day-of-week"></div>
                         <div class="forcast-date"></div>
@@ -65,6 +70,7 @@
                         <div class="forcast-temp"></div>
                         <div class="forcast-humidity"></div>
                     </span>
+
                     <span id="forcast-day-4" class="forcast-card">
                         <div class="forcast-day-of-week"></div>
                         <div class="forcast-date"></div>
@@ -72,6 +78,7 @@
                         <div class="forcast-temp"></div>
                         <div class="forcast-humidity"></div>
                     </span>
+
                     <span id="forcast-day-5" class="forcast-card">
                         <div class="forcast-day-of-week"></div>
                         <div class="forcast-date"></div>
@@ -87,8 +94,7 @@
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" 
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
-        crossorigin="anonymous">
-    </script>
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <script src="https://tomakpo.github.io/MyAPIs/global.js"></script>
